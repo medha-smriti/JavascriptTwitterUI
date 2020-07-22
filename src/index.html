@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Example</title>
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/profile-navbar.css" rel="stylesheet">
+    <link href="css/right-navbar.css" rel="stylesheet">
+    <link href="css/follower-box.css" rel="stylesheet">
+    <link href="css/tweet-box.css" rel="stylesheet">
+    <link href="css/tweetbox-toolbar-area.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/app.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar" id="main-navbar">
+            <div class="navbar-inner" id="navbar-inner">
+
+                <!-- *
+                * First column of navigation bar containing
+                * Home, Notification, Messages buttons.
+                -->
+                <div class="navbar-col1">
+                    <div class="navbar-button navbar-home-button">
+                        <span class="icon icon-home"></span>
+                        <span class="button-text" onclick="loadAllTweets()">Home</span>
+                    </div>
+                    <div class="navbar-button navbar-notification-button">
+                        <span class="icon icon-notification"></span>
+                        <span class="button-text">Notifications</span>
+                    </div>
+                    <div class="navbar-button navbar-messages-button">
+                        <span class="icon icon-messages"></span>
+                        <span class="button-text">Messages</span>
+                    </div>
+                </div>
+
+                <!--
+                * Column containing twitter logo.
+                -->
+                <div class="navbar-col2">
+                    <div class="logo">logo here</div>
+                </div>
+
+                <!--
+                * Third column of navigation contains 3 classes
+                * Search bar for searching tweets.
+                * Div for profile pic display
+                * Tweet Button to tweet new post.
+                -->
+                <div class="navbar-col3">
+                    <div class="profile-navbar-col1">
+                        <div class="search-container">
+                            <form action="#" id="form">
+                                <input type="text"
+                                       placeholder="Search Tweet"
+                                       name="search"
+                                        id="searchTweet">
+                                <button type="submit" onclick="searchTweet()">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="profile-navbar-col2">
+                        <div class="user-icon"></div>
+                    </div>
+                    <div class="profile-navbar-col3">
+                        <div class="tweet-button" onclick="createPost()">
+                            Tweet
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="navbar-line-wrapper">
+                <div class="navbar-line-inner">
+                    <div class="navbar-line-col1">
+                        <div class="navbar-button-line"></div>
+                        <div class="navbar-button-line"></div>
+                        <div class="navbar-button-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainbody" id="mainbody">
+
+            <!--
+            * Containing profile details of the user
+            -->
+            <div class="col1">
+
+                <div class="follower-box">
+
+                    <div class="followers-box-user-info-wrapper">
+                        <div class="followers-box-user-icon-wrapper row">
+                            <div col="28">
+                                <div class="followers-box-user-icon">
+                                    <img src="assets/user-icon.jpg"/>
+                                </div>
+                            </div>
+
+                            <div class="followers-box-user-name" col="72">
+                                <p class="user-text-name">Medha Smriti</p>
+                                <p class="user-name">medha.smriti</p>
+                            </div>
+                        </div>
+                        <div class="followers-box-toolbar row">
+
+                            <div col="33.3">
+                                <span class="tweets-toolbar-title">Tweets</span>
+                                <span class="tweets-toolbar-count">4</span>
+                            </div>
+                            <div  col="33.3">
+                                <span class="tweets-toolbar-title">Following</span>
+                                <span class="tweets-toolbar-count">15</span>
+                            </div>
+                            <div  col="33.3">
+                                <span class="tweets-toolbar-title">Followers</span>
+                                <span class="tweets-toolbar-count">0</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="followers-box-banner">
+                        <img src="assets/user-banner.jpg"/>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--
+            * Placeholder for posting new Tweet
+            -->
+            <div class="col2">
+                <div class="tweet-box-content row">
+                    <div class="tweetbox-user-icon-col">
+                        <div class="tweetbox-user-icon"></div>
+                    </div>
+                    <div class="tweetbox-message-content">
+                        <div class="tweetbox-message-input-area">
+                            <input class="tweetbox-message-input-area-inner row">
+                            </input>
+                        </div>
+                        <div class="tweetbox-toolbar-area">
+                            <div col="60">
+                                <div class="tweet-button-wrapper">
+                                    <div class="small-tweet-button">Tweet</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col3" id="col3">col3</div>
+        </div>
+    </div>
+</body>
+</html>

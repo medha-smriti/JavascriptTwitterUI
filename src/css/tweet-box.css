@@ -1,0 +1,80 @@
+.tweet-box-content {
+    height: 300px;
+    background-color: #C2EDFF;
+    width: 100%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.tweet-box-content row{
+    height: 300px;
+    background-color: #C2EDFF;
+    width: 100%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.tweetbox-user-icon-col {
+    overflow: hidden;
+}
+
+.tweetbox-user-icon {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background: white;
+    border-radius: 30px;
+}
+
+
+.tweetbox-message-content {
+    overflow: hidden;
+}
+
+.tweetbox-message-input-area {
+    height: 150px;
+    display:block;
+    width: 90%;
+    position: relative;
+}
+
+.tweetbox-toolbar-area {
+    height: 28%;
+    display:block;
+    width: 100%;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #98D8FF;
+    margin: 3px auto 0 auto;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+.circle p{
+    margin: 0px;
+    font-size: 2.0em;
+    text-align: center;
+    color: #98D8FF;
+
+    line-height: 40px;
+}
+
+.tweetbox-message-input-area-inner {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    bottom: 10px;
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #98D8FF;
+
+}
+

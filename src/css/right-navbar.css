@@ -1,0 +1,61 @@
+.right-navbar-section {
+    display: table-cell;
+    background-color: darkslateblue;
+}
+
+.tweet-button {
+    display: table-cell;
+    margin: 10px;
+    background: cornflowerblue;
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+    right: 5px;
+    bottom: 5px;
+    left: 10px;
+    vertical-align: middle;
+    text-align: center;
+    height: 35px;
+    width: 100px;
+    line-height: 30px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 5px blue;
+}
+
+.tweet-button:hover , .small-tweet-button{
+    cursor: pointer;
+    background: darkslateblue;
+}
+
+.user-icon {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.search-container input[type=text]{
+    height: 40px;
+    width: 70%;
+    margin: 10px;
+    background-color: powderblue;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.search-container {
+  float: right;
+}
+
+.search-container button {
+    background-color: red;
+    color: darkslateblue;
+    width: 20%;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 17px;
+    float: right;
+    border: 1px solid white;
+    cursor: pointer;
+}
